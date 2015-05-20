@@ -1,0 +1,59 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require flat-ui.min.css
+ *= require bootstrap.min.css
+ */
+
+// Brand Defined Colours
+$asset-slate: rgba(44, 62, 79, 1);
+$asset-sky: rgba(62, 152, 211, .85);
+$asset-flower: rgba(150, 93, 165, .85);
+$asset-foam: rgba(44, 184, 154, .85);
+$asset-wenge: rgba(35, 31, 32, .85);
+$asset-white: rgba(255, 255, 255, .85);
+
+// Brand Defined Colours
+$first-font: 'Lato', sans-serif;
+$second-font: 'Helvetica', Helvetica;
+
+// scss imports
+
+body{
+  background-image: url('http://i.imgur.com/gglxHbQ.png');
+  background-size: cover;
+  background-attachment:fixed;
+}
+.nav{
+  background-color: $asset-slate;
+  font-family: $first-font;
+  font-weight: 250;
+  font-size: 52px;
+  list-style-type: none;
+  border-radius: 2px;
+  padding: 15px 0;
+}
+.responsive-menu{
+  color: $asset-slate;
+}
+h1{
+  color: $asset-slate;
+  font-weight: 102;
+  font-size: 204px!important ;
+}
+h2{
+  color: $asset-foam;
+  font-weight: 102;
+  font-size: 204px!important ;
+}

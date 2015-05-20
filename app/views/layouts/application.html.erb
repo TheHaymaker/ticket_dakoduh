@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TicketPunch</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <% unless current_user %>
+  <nav>
+    <div class="nav">
+    <div class="menu-btn" id="menu-btn">
+    <div class="responsive-menu">
+      <a href="/">Home</a>
+      <a href="/users/new">Sign-Up</a>
+      <a href="/users/log-in">Log-In</a>
+  </nav>
+
+</div>
+</div>
+
+  <% end %>
+
+<%= yield %>
+
+</body>
+</html>
